@@ -1,57 +1,44 @@
-<div style="text-align:center; margin-top:20px;">
-  <h3>One time payment to avoid robots</h3>
-
-  <p><b>Amount:</b> 3 USDT</p>
-
-  <p><b>Wallet Address (TRC20):</b></p>
-  <input type="text" value="TK7Q9s2MvmSAX6edN2ePrPtUKit2cFrDw1" id="wallet" readonly style="width:80%; padding:8px;">
-
-  <br><br>
-
-  <button onclick="copyWallet()" style="padding:10px 20px; background:green; color:white; border:none; cursor:pointer;">
-    Copy Wallet Address
-  </button>
-
-  <br><br>
-
-  <button onclick="confirmPayment()" style="padding:10px 20px; background:orange; color:white; border:none; cursor:pointer;">
-    I Have Paid
-  </button>
-</div>
-
 <script>
-function copyWallet() {
-  var copyText = document.getElementById("wallet");
-  copyText.select();
-  document.execCommand("copy");
-  alert("Wallet address copied!");
+function unlockVideo() {
+  document.getElementById("videoSection").style.display = "block";
 }
+  <!-- 🔒 PREMIUM VIDEO SECTION -->
+<div style="text-align:center; padding:60px 20px; background:#0f172a; color:#fff;">
 
-function confirmPayment(send a full screenshot via whatsapp +265881055355) {
-  alert("send a screenshot via whatsapp +265881055355. Admin will verify and unlock video.");
+  <h1>🔒 Premium Video Access</h1>
+  <p>Pay with USDT to watch this video</p>
+
+  <!-- 💰 PAYMENT BUTTON -->
+  <a href="https://your-payment-link.com" target="_blank">
+    <button style="background:#22c55e; color:#fff; padding:15px 30px; border:none; font-size:18px; border-radius:10px; cursor:pointer;">
+      💰 Pay with USDT
+    </button>
+  </a>
+
+  <p style="margin-top:20px; font-size:14px; color:#94a3b8;">
+    After payment, click below
+  </p>
+
+  <!-- ✅ CONFIRM BUTTON -->
+  <br>
+  <button onclick="unlockVideo()" style="background:#22c55e; color:#fff; padding:15px 30px; border:none; font-size:18px; border-radius:10px; cursor:pointer;">
+    ✅ I Have Paid
+  </button>
+
+  <!-- 🎥 HIDDEN VIDEO LINK -->
+  <div id="videoSection" style="display:none; margin-top:30px;">
+    <h2>🎉 Access Granted</h2>
+    <p>Click below to watch</p>
+
+    <a href="https://unu.im/re/4111399/work" target="_blank">
+      <button style="background:#22c55e; color:#fff; padding:15px 30px; border:none; font-size:18px; border-radius:10px; cursor:pointer;">
+        ▶️ Watch Video
+      </button>
+    </a>
+  </div>
+
+</div>
 </script>
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCM93JVjjZMY3Wz7oC3D89unkmbg0yGaMA",
-    authDomain: "global-task-mw.firebaseapp.com",
-    projectId: "global-task-mw",
-    storageBucket: "global-task-mw.firebasestorage.app",
-    messagingSenderId: "150911436220",
-    appId: "1:150911436220:web:4b4fb22bae3b5143ccd7b9",
-    measurementId: "G-GB2LX305Q3"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
 </script>
 <!DOCTYPE html>
 <html lang="en">
